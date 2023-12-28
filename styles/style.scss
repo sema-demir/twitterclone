@@ -41,10 +41,6 @@ button:hover {
   }
 }
 
-//Sol Alan
-nav {
-}
-
 // Orta Alan
 main {
   height: 100vh;
@@ -52,9 +48,19 @@ main {
   overflow: auto;
 }
 
-//* Sağ Alan
+// Sağ Alan
 aside {
   @include md {
     display: none;
   }
+}
+//Sol Alan
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include sm {
+    align-items: center !important;
+}
 }

@@ -118,4 +118,15 @@ main {
   aside {
     display: none;
   }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 670px) {
+  nav {
+    align-items: center !important;
+  }
 }/*# sourceMappingURL=style.css.map */
