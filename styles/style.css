@@ -113,6 +113,47 @@ main {
   border: 1px solid rgb(60, 60, 60);
   overflow: auto;
 }
+main header {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 21px;
+  border-bottom: 1px solid rgb(60, 60, 60);
+}
+main #post-tweet {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(60, 60, 60);
+}
+main #post-tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main #post-tweet .input-area {
+  width: 100%;
+}
+main #post-tweet .input-area input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+main #post-tweet .input-area .button-area {
+  display: flex;
+  justify-content: end;
+}
+main #post-tweet .input-area .button-area button {
+  border-radius: 60px;
+  background: #1da1f2;
+  color: white;
+}
+main #post-tweet .input-area .button-area button:hover {
+  background: rgb(36, 150, 222);
+}
 
 @media (max-width: 1000px) {
   aside {
@@ -128,5 +169,120 @@ nav {
 @media (max-width: 670px) {
   nav {
     align-items: center !important;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    align-items: end;
+    margin-right: 50px;
+  }
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    align-items: end;
+    padding: 10px 5px !important;
+  }
+}
+nav ul li {
+  display: flex;
+  font-size: 19px;
+  gap: 10px;
+  padding: 20px 10px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+@media (max-width: 670px) {
+  nav ul li {
+    padding: 10px 5px;
+  }
+}
+nav ul li:hover {
+  background: rgb(60, 60, 60);
+}
+nav ul li:last-child {
+  background: #1da1f2;
+  padding: 10px 10px;
+}
+@media (max-width: 670px) {
+  nav ul li:last-child {
+    padding: 10px 5px;
+  }
+}
+nav ul img {
+  width: 80px;
+}
+@media (max-width: 1000px) {
+  nav ul img {
+    width: 40px;
+  }
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 1000px) {
+  nav ul i {
+    font-size: 23px;
+  }
+}
+nav ul span {
+  white-space: nowrap;
+}
+@media (max-width: 1000px) {
+  nav ul span {
+    display: none;
+  }
+}
+nav .user-info {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 0 10px;
+}
+@media (max-width: 1000px) {
+  nav .user-info {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+nav .user-info img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+@media (max-width: 1000px) {
+  nav .user-info img {
+    width: 50px;
+    height: 50px;
+  }
+}
+nav .user-info button {
+  font-size: 16px;
+  padding: 4px 10px;
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+@media (max-width: 1000px) {
+  nav .user-info button {
+    font-size: 18px;
+    padding: 6px 16px;
+  }
+}
+nav .user-info span,
+nav .user-info p {
+  white-space: nowrap;
+}
+@media (max-width: 1000px) {
+  nav .user-info span,
+  nav .user-info p {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
